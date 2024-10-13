@@ -12,8 +12,8 @@ Demo
 Installation
 
 Clone the repository:
-git clone https://github.com/your-username/todolist-using-usereducer.git
-cd todolist-using-usereducer
+git clone https://github.com/saqlainnaqshi/ToDoList_useReducer.git
+cd ToDoList_useReducer
 
 Install dependencies:
 npm install
@@ -45,9 +45,9 @@ In this project, the useReducer hook manages the state of the todo list.
 state: Represents the list of todos.
 dispatch: Updates the state based on actions (e.g., add, delete, toggle).
 Reducer (app.jsx)
+
 import { useReducer, useState } from "react"
 import "./App.css"
-
 function App() {
   const initialState = [
     {
@@ -68,8 +68,6 @@ function App() {
       isComplete: false
     },
   ]
-
-
   const reducer = (prevState, action) => {
     switch (action.type) {
       case "SAVE_DATA":
@@ -137,9 +135,6 @@ function App() {
             })}
           </ul >
         </div>
-
-
-
         <div className="card">
           <h2>Done</h2>
           <ul>
@@ -166,36 +161,30 @@ function App() {
         </div>
       </div>
     </>
-
   )
 }
 export default App
 
+
 Styling (App.css)
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
-
-
 .card {
   border: 2px solid black;
   padding: 0px 7% 7% 7%;
 
 }
-
 .read-the-docs {
   color: #888;
 }
-
 ul{
-
   list-style: square;
-  
 }
-
 button{
   color:white;
   background-color: blueviolet;
@@ -204,7 +193,6 @@ button{
   border: 1px solid blueviolet;
   border-radius: 2px;
 }
-
 input{
   color:black;
   background-color: aliceblue;
@@ -212,7 +200,6 @@ input{
   height: 25px;
   border: none;
 }
-
 .box{
   display: flex;
   flex-flow: column;
@@ -228,5 +215,5 @@ This project is licensed under the MIT License.
 Contact
 If you have any questions or feedback, feel free to reach out:
 
-GitHub: saqlainnaqshi
+GitHub: [saqlainnaqshi](https://github.com/saqlainnaqshi)
 This README.md covers everything needed for your React todo list project, including setup, usage, and a basic structure overview. You can adjust it according to your project-specific needs and add any additional sections if required.
